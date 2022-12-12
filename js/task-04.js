@@ -1,11 +1,10 @@
-let counterValue = document.querySelector("#value");
-console.log(counterValue);
-// counterValue = 0;
-// const testmin = document.querySelector(".testmin");
-// const testmax = document.querySelector(".testmax");
-// testmin.addEventListener("click", onClickPlus);
-// // testmax.addEventListener("click", onClickMinus);
+const counter = document.querySelector("#value");
 
-// function onClickPlus(evt) {
-//   counterValue.textContent = "wtf";
-// }
+const buttonDecr = document.querySelector('[data-action="decrement"]');
+const buttonIncr = document.querySelector('[data-action="increment"]');
+
+let counterValue = 0;
+buttonDecr.addEventListener("click", () => {
+  counterValue += 1;
+  counter.textContent = counterValue;
+});
