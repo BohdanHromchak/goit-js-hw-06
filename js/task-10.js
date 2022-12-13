@@ -20,13 +20,16 @@ destroyBtn.addEventListener("click", () => {
 // Функція createBoxes(amount)
 const box = document.querySelector("#boxes");
 
-let markup = "";
+let boxesArray = [];
 function createBoxes(amount) {
-  for (let i = 0; i <= amount; i += 1) {
-    markup += `<div></div>`;
+  for (let i = 1; i <= amount; i += 1) {
+    boxesArray += `<div></div>`;
   }
 }
-createBoxes(5);
-box.insertAdjacentHTML("beforeend", markup);
-
+createBoxes(3);
+console.log(boxesArray);
+// box.insertAdjacentHTML("beforeend", markup);
+const elements = boxesArray.map((option) => {
+  .style.backgroundColor = 'red'
+});
 // Функція  destroyBoxes()
