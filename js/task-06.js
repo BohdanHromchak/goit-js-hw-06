@@ -1,7 +1,7 @@
 const input = document.querySelector("#validation-input");
 input.addEventListener("blur", (evt) => {
   if (evt.currentTarget.value.length === 6) {
-    return alert("ok");
+    return (input.style.borderColor = "#4caf50");
   }
-  alert("wtf");
+  input.style.borderColor = "#f44336";
 });
