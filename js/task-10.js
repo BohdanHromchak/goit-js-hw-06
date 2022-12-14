@@ -18,22 +18,12 @@ destroyBtn.addEventListener("click", () => {
 });
 
 // Функція createBoxes(amount)
-const box = document.querySelector("#boxes");
+// const box = document.querySelector("#boxes");
 
-let boxesArray = [];
-function createBoxes(amount) {
-  for (let i = 1; i <= amount; i += 1) {
-    boxesArray += `<div></div>.`;
-  }
-}
-createBoxes(3);
-console.log(boxesArray.split("."));
-// box.insertAdjacentHTML("beforeend", markup);
-
-// const elements = boxesArray.map((option) => {
-//   .style.backgroundColor = 'red'
-// });
-
-// Функція  destroyBoxes()
-// const test = [";", "k"];
-// console.log(test);
+// let boxesArray = [];
+// function createBoxes(amount) {
+//   for (let i = 1; i <= amount; i += 1) {
+//     boxesArray += `<div></div>.`;
+//   }
+// }
+// createBoxes(3);
