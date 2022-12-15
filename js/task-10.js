@@ -3,19 +3,19 @@ function getRandomHexColor() {
 }
 
 // створення і очищення колекції елементів
-const createBtn = document.querySelector("[data-create]");
-const destroyBtn = document.querySelector("[data-destroy]");
-const input = document.querySelector("input");
+// const createBtn = document.querySelector("[data-create]");
+// const destroyBtn = document.querySelector("[data-destroy]");
+// const input = document.querySelector("input");
 
-let enteredData = [];
-createBtn.addEventListener("click", () => {
-  enteredData.push(input.value);
-  console.log(enteredData);
-});
-destroyBtn.addEventListener("click", () => {
-  enteredData = [];
-  console.log(enteredData);
-});
+// let enteredData = [];
+// createBtn.addEventListener("click", () => {
+//   enteredData.push(input.value);
+//   console.log(enteredData);
+// });
+// destroyBtn.addEventListener("click", () => {
+//   enteredData = [];
+//   console.log(enteredData);
+// });
 
 // Функція createBoxes(amount)
 // const box = document.querySelector("#boxes");
