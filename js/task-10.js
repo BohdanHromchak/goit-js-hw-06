@@ -2,28 +2,19 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-// створення і очищення колекції елементів
-// const createBtn = document.querySelector("[data-create]");
-// const destroyBtn = document.querySelector("[data-destroy]");
-// const input = document.querySelector("input");
+const createBtn = document.querySelector("[data-create]");
+const destroyBtn = document.querySelector("[data-destroy]");
 
-// let enteredData = [];
-// createBtn.addEventListener("click", () => {
-//   enteredData.push(input.value);
-//   console.log(enteredData);
-// });
-// destroyBtn.addEventListener("click", () => {
-//   enteredData = [];
-//   console.log(enteredData);
-// });
+createBtn.addEventListener("click", onCreate);
+destroyBtn.addEventListener("click", onDestroy);
 
-// Функція createBoxes(amount)
-// const box = document.querySelector("#boxes");
+function onCreate() {}
+function onDestroy() {}
 
-// let boxesArray = [];
-// function createBoxes(amount) {
-//   for (let i = 1; i <= amount; i += 1) {
-//     boxesArray += `<div></div>.`;
-//   }
-// }
-// createBoxes(3);
+function createBoxes(amount) {
+  let boxSize = 30;
+  let markup = "";
+  for (let i = 1; i <= amount; i += 1) {
+    markup += `<div style="background-color: aquamarine; width: 30px; height: 30px"></div>`;
+  }
+}
